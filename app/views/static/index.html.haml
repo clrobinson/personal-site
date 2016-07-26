@@ -1,7 +1,24 @@
-.row.expanded
-  .column.small-4
-    = icon "flag"
-  .column.small-4
-    = icon "check"
-  .column.small-4
-    Thing 3
+!!! 5
+%html{ :lang => "en" }
+  %head
+    %meta{ :charset => "utf-8" }
+
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
+
+    %title= content_for?(:title) ? yield(:title) : "Untitled"
+
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tag
+
+  %body
+
+    = render 'header'
+
+    #main
+      = render 'panels/banner'
+      = render 'panels/projects'
+      = render 'panels/history'
+      = render 'panels/education'
+      = render 'panels/game_project'
+      = render 'panels/contact'
