@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 @import "foundation_and_overrides";
 @import "font-awesome-sprockets";
 @import "font-awesome";
@@ -8,3 +11,16 @@
 @import "game_project";
 @import "history";
 @import "projects";
+
+body {
+  font-family: 'Raleway';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald';
+  font-weight: 400;
+}
+
+.panel {
+  padding: 15px;
+}
