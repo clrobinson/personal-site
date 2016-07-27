@@ -16,9 +16,24 @@ body {
   font-family: 'Raleway';
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-family: 'Oswald';
   font-weight: 400;
+}
+
+h2 {
+  position: relative;
+
+  &::after {
+    content: '';
+    width:100%;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    height: 2px;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 10%,rgba(0,0,0,0) 100%);
+    z-index: 1;
+  }
 }
 
 .panel {
