@@ -1,7 +1,41 @@
 #banner {
   background: transparent url('vancouver-skyline.jpg') no-repeat scroll center center;
-  height: 350px;
   color: white;
   text-align: center;
-  padding: 50px 0;
+  padding: 40px 0;
+
+  #banner-underlay {
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 40px 20px rgba(0,0,0,0.5);
+  }
+
+  #banner-info {
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 10px;
+
+    ::before {
+      opacity: 0.6;
+      margin-right: 5px;
+      font-size: 11px;
+    }
+
+    #address::before {
+      content: 'address';
+    }
+
+    #phone::before {
+      content: 'phone no.';
+    }
+
+    #email::before {
+      content: 'email';
+    }
+
+    #linkedin::before {
+      content: 'linkedin';
+    }
+  }
+
+  
 }
