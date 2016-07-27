@@ -2,4 +2,19 @@
   min-height: 350px;
 }
 
-.project {}
+.project {
+  /**/
+
+  .slick-wrapper {
+    background: #ddd;
+    padding: 1px 1px;
+    margin: 20px 0;
+  }
+
+  .client {
+    font-style: italic;
+    opacity: 0.6;
+  }
+
+  .slick-info-wrapper {}
+}

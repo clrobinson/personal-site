@@ -1,0 +1,20 @@
+.project
+  %h3 vDevice API
+  %p.client Black Tusk Media
+  %p This project serves simulation images (screenshots) and simulator architecture data. Blacktusk admins can log into the API and create new smartphone simulators, as well as manage client subscriptions.
+  .slick-wrapper
+    .slick
+      %div= image_tag 'vdevice-api-1'
+      %div= image_tag 'vdevice-api-2'
+      %div= image_tag 'vdevice-api-3'
+      %div= image_tag 'vdevice-api-4'
+  %ul.slick-info-wrapper
+    %li.slick-info{data: {slick: 0}}
+      API data integrates with Angular app to display smartphone simulation. This required CORS 'preflight' request support in Rails. 
+    %li.hide.slick-info{data: {slick: 1}}
+      "Simulation builder" was built using jQuery and includes clickable hotspot mapping, screen linking, and hardware device button mapping (e.g. a smartphone's 'back' button). 
+    %li.hide.slick-info{data: {slick: 2}}
+      Rewrite.
+    %li.hide.slick-info{data: {slick: 3}}
+      Rewrite.
+  

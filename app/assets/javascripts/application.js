@@ -15,4 +15,24 @@
 //= require foundation
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function(){
+
+  $(document).foundation();
+
+  $('.slick').slick({
+    dots: true,
+    adaptiveHeight: true
+  });
+
+  $('.slick').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+    var $infoWrapper = $(this).parent().siblings('.slick-info-wrapper');
+    var $currentLi = $infoWrapper.find("[data-slick='" + currentSlide + "']");
+    var $nextLi = $infoWrapper.find("[data-slick='" + nextSlide + "']");
+    $currentLi.animate({opacity: 0}, 250, function() {
+      $currentLi.addClass('hide');
+      $nextLi.removeClass('hide').css('opacity', 0);
+      $nextLi.animate({opacity: 1}, 250);
+    });
+  });
+
+});
