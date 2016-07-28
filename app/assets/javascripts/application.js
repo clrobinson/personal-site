@@ -39,4 +39,14 @@ $(function(){
     $(this).parent().toggleClass('active');
   });
 
+  $('#nav-sandwich').on('click', function(e) {
+    $('#nav').toggleClass('active');
+    $('#nav-overlay').toggleClass('active');
+  });
+
+  $('#nav-overlay').on('click', function() {
+    $(this).removeClass('active');
+    $('#nav').removeClass('active');
+  });
+
 });
