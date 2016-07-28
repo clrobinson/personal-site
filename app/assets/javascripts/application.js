@@ -26,12 +26,12 @@ $(function(){
 
   $('.slick').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
     var $infoWrapper = $(this).parent().siblings('.slick-info-wrapper');
-    var $currentLi = $infoWrapper.find("[data-slick='" + currentSlide + "']");
-    var $nextLi = $infoWrapper.find("[data-slick='" + nextSlide + "']");
-    $currentLi.animate({opacity: 0}, 250, function() {
-      $currentLi.addClass('hide');
-      $nextLi.removeClass('hide').css('opacity', 0);
-      $nextLi.animate({opacity: 1}, 250);
+    var $current = $infoWrapper.find("[data-slick='" + currentSlide + "']");
+    var $next = $infoWrapper.find("[data-slick='" + nextSlide + "']");
+    $current.animate({opacity: 0}, 250, function() {
+      $current.addClass('hide');
+      $next.removeClass('hide').css('opacity', 0);
+      $next.animate({opacity: 1}, 250);
     });
   });
 
