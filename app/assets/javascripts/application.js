@@ -35,4 +35,15 @@ $(function(){
     });
   });
 
+  $('#history .head').on('click', function(e) {
+    $(this).parent().toggleClass('active');
+  });
+
+  $('#history .toggle-all').on('click', function(e) {
+    e.preventDefault();
+    $('#history .head').each(function() {
+      $(this).trigger('click');
+    });
+  });
+
 });
