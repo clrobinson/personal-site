@@ -1,17 +1,17 @@
 .project
   %h3 vDevice Learning Management System
   %p.client Black Tusk Media
-  %p This project is the main client interface to access simulated smartphone devices. Admin users can create and manage courses, which involves pairing course steps to simulator states. Courses are part of the local database, while simulator data comes from an API.
+  %p.intro This project is the main client interface to access simulated smartphone devices. Admin users can create and manage courses, which involves pairing course steps to simulator states. Courses are part of the local database, while simulator data comes from an API.
   .slick-wrapper
     .slick
       %div= image_tag 'vdevice-lms-1'
       %div= image_tag 'vdevice-lms-2'
       %div= image_tag 'vdevice-lms-3'
-  %ul.slick-info-wrapper
-    %li.slick-info{data: {slick: 0}}
-      Transitioned this project to use ActiveResource and pull smartphone simulator data from an in-house API. 
-    %li.hide.slick-info{data: {slick: 1}}
-      Rebuilt 'course builder' to be asynchronous and considerably more stable. This course builder used jQuery and AJAX to interact with the Ruby on Rails database, saving each change in real time.
-    %li.hide.slick-info{data: {slick: 2}}
-      Rewrite.
+  %p.slick-info{data: {slickinfo: 0}}
+    Transitioned this project to use ActiveResource and pull smartphone simulator data from an in-house API. 
+  %p.hide.slick-info{data: {slickinfo: 1}}
+    Rebuilt 'course builder' to be asynchronous and considerably more stable. This course builder used jQuery and AJAX to interact with the Ruby on Rails database, saving each change in real time.
+  %p.hide.slick-info{data: {slickinfo: 2}}
+    Rewrite.
+  .end
   

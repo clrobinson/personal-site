@@ -25,13 +25,13 @@ $(function(){
   });
 
   $('.slick').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
-    var $infoWrapper = $(this).parent().siblings('.slick-info-wrapper');
-    var $current = $infoWrapper.find("[data-slick='" + currentSlide + "']");
-    var $next = $infoWrapper.find("[data-slick='" + nextSlide + "']");
-    $current.animate({opacity: 0}, 250, function() {
-      $current.addClass('hide');
-      $next.removeClass('hide').css('opacity', 0);
-      $next.animate({opacity: 1}, 250);
+    var $wrapper  = $(this).parent();
+    var $currentInfo = $wrapper.siblings("[data-slickinfo='" + currentSlide + "']");
+    var $nextInfo = $wrapper.siblings("[data-slickinfo='" + nextSlide + "']");
+    $currentInfo.animate({opacity: 0}, 250, function() {
+      $currentInfo.addClass('hide');
+      $nextInfo.removeClass('hide').css('opacity', 0);
+      $nextInfo.animate({opacity: 1}, 250);
     });
   });
 

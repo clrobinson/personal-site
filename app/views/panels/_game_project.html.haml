@@ -1,19 +1,20 @@
 #game_project.panel
   %h2 Game Project: Apotheosis
-  %p Initial description.
+  %p.intro Initial description.
 
   .slick-wrapper
     .slick
       %div= image_tag 'apo-1'
       %div= image_tag 'apo-2'
       %div= image_tag 'apo-3'
-  .slick-info-wrapper
 
-    %p.slick-info{data: {slick: 0}}
-      Description 1
+  %p.slick-info{data: {slickinfo: 0}}
+    Description 1
 
-    %p.hide.slick-info{data: {slick: 1}}
-      Description 2
+  %p.hide.slick-info{data: {slickinfo: 1}}
+    Description 2
 
-    %p.hide.slick-info{data: {slick: 2}}
-      Description 3
+  %p.hide.slick-info{data: {slickinfo: 2}}
+    Description 3
+
+  .end

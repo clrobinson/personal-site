@@ -1,17 +1,17 @@
 .project
   %h3 Chime
   %p.client RedStamp Agency
-  %p This project involved building a client portal and account management tool for a community management service (social media, blogs, etc). It is built with Ruby on Rails, Foundation, and jQuery, and relies heavily on the Recurly API. 
+  %p.intro This project involved building a client portal and account management tool for a community management service (social media, blogs, etc). It is built with Ruby on Rails, Foundation, and jQuery, and relies heavily on the Recurly API. 
   .slick-wrapper
     .slick
       %div= image_tag 'chime-1'
       %div= image_tag 'chime-2'
       %div= image_tag 'chime-3'
-  %ul.slick-info-wrapper
-    %li.slick-info{data: {slick: 0}}
-      Added functionality for better UI and business logic, such as modals, mail service integration (via Postmark), and a full community manager back-end for client management. 
-    %li.hide.slick-info{data: {slick: 1}}
-      Implemented Recurly's "PCI-DDS Level 1" compliant payment system. Form fields are delivered via iframe, and match the project's design.
-    %li.hide.slick-info{data: {slick: 2}}
-      Built coupon code support and subscription management tools into the Chime app, using the Recurly API to integrate with billing.
+  %p.slick-info{data: {slickinfo: 0}}
+    Added functionality for better UI and business logic, such as modals, mail service integration (via Postmark), and a full community manager back-end for client management. 
+  %p.hide.slick-info{data: {slickinfo: 1}}
+    Implemented Recurly's "PCI-DDS Level 1" compliant payment system. Form fields are delivered via iframe, and match the project's design.
+  %p.hide.slick-info{data: {slickinfo: 2}}
+    Built coupon code support and subscription management tools into the Chime app, using the Recurly API to integrate with billing.
+  .end
   
