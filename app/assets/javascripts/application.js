@@ -49,4 +49,12 @@ $(function(){
     $('#nav').removeClass('active');
   });
 
+  $('.nav-item').on('click', function() {
+    $('#nav-sandwich').trigger('click');
+    var scrollId = '#' + $(this).data('nav-id');
+    $('html, body').animate({
+      scrollTop: $(scrollId).offset().top - 70
+    }, 1250);
+  });
+
 });
