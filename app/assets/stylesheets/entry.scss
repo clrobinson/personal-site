@@ -47,13 +47,65 @@
       .expand-wrap .expand {
         color: transparent;
         transform: rotate(0deg);
-        padding: 10px 10px 0 0;
       }
     }
 
     .body {
       max-height: 600px;
       opacity: 1;
+    }
+  }
+}
+
+
+
+@media (min-width: 640px) {
+
+  .entry {
+
+    .head {
+      border: 1px solid #fff;
+      border-top: 1px solid #eee;
+
+      .expand-wrap {
+        position: relative;
+
+        &::before {
+          transition: all 0.3s ease-in-out;
+          content: 'Click to Expand';
+          color: transparent;
+          position: absolute;
+          width: 100px;
+          top: 5px;
+          right: 25px;
+          font-size: 12px;
+          z-index: -1;
+        }
+      }
+
+      &:hover {
+        /**/
+
+        .expand-wrap::before {
+          color: #bbb;
+        }
+      }
+    }
+
+    &.active {
+      /**/
+
+      .head {
+        /**/
+
+        .expand-wrap .expand {
+          border: 0px solid #fff;
+        }
+
+        .expand-wrap::before {
+          color: transparent;
+        }
+      }
     }
   }
 }
